@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bài 5</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div id="div"></div>
+<script>
+    var celeb = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    var star = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    var isFound = false;
+    var a = prompt("Nhập tên người nổi tiếng");
+    findingStar(a)
+    function findingStar(x) {
+        for (var i=0; i<celeb.length; i++){
+            if (x === celeb[i]){
+                alert(star[i]);
+                isFound = true;
+            }
+        }
+        if(!isFound) alert("Không tìm thấy người nổi tiếng");
+    }
+</script>
+</body>
+</html>
